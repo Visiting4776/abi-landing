@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>August Bebel Institut</title>
+
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="icon" href="logo.png" />
+
+  <style>
+    #app {
+      max-width: 740px;
+      margin: 2rem auto;
+      font-family: sans-serif;
+      color: rgb(10 24 41);
+    }
+
+    #app>img {
+      margin: 1rem auto;
+    }
+
+    .img-container {
+      text-align: center;
+    }
+
+    .event {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    .event::before {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      border-bottom: 1px dotted rgb(10 24 41);
+      z-index: 0;
+    }
+
+    .event-name,
+    .event-time {
+      background: white;
+      padding: 0 .4rem;
+      /* cover the dots underneath */
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <body>
+    <main id="app" class="page-content">
+      <div class="img-container">
+        <img src="logo.png" alt="August Bebel Institut Logo" />
+      </div>
+      <p>Herzlich Willkommen! Unsere Website ist wegen Wartungsarbeiten aktuell leider nicht erreichbar. Um sich
+        für eine unserer Veranstaltungen anzumelden, senden Sie bitte eine kurze Mail an <a
+          href="mailto:anmeldung@august-bebel-institut.de">anmeldung@august-bebel-institut.de</a>.</p>
+
+      <p style="text-align: center; font-weight: bold;">Unser Programm im Juni:</p>
+      <div class="event-list">
+        <div class="event">
+          <span class="event-name">Gedenkstätte Plötzensee: Erkundung auf dem Pfad der Erinnerung</span>
+          <span class="event-time">14. Juni 11:00-13:30</span>
+        </div>
+        <div class="event">
+          <span class="event-name">Berliner Rebell*innen (Stadtspaziergang)</span>
+          <span class="event-time">19. Juni 18:30-20:30</span>
+        </div>
+        <div class="event">
+          <span class="event-name">Exkursion »Rail Baltica«</span>
+          <span class="event-time">28. Juni - 13. Juli</span>
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>
